@@ -1,0 +1,118 @@
+:root {
+    --primary: #050218c9;
+    --secondary: #8386d6c9;
+    --dark: #0908088a;
+    --light: rgb(240, 236, 236);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: #050218c9;
+}
+
+button {
+    display: inline-block;
+    padding: 1rem;
+    margin: 4px;
+    background-color: var(--secondary);
+    outline: none;
+    border: transparent;
+    border-radius: 4px;
+    cursor: pointer;
+    line-height: 1;
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--light);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+.visual {
+}
+
+.container-calculator {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    background-color: var(--primary);
+    height: 450px;
+    width: 300px;
+    margin: 100px auto;
+    padding: 20px;
+    border-radius: 8px;
+    transform-style: preserve-3d;
+}
+
+.display-calculation {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* align-items: center; */
+    padding: 10px;
+    width: 100%;
+    height: 80px;
+    background-color: var(--light);
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+.answer-area {
+    align-self: flex-end;
+    /* width: 50%;
+    border-right: 2px solid black;
+    padding-right: 8px;
+    margin-right: 8px; */
+}
+.calculation-area {
+    width: 50%;
+}
+
+.button-input {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.digits {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.digits button {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+.operators {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.operators button {
+    position: relative;
+    background-color: rgb(91, 89, 150);
+}
+
+.operators button {
+    padding: 10px;
+    font-size: 16px;
+}
+
+/* font weight */
+.font-weight--600 {
+    font-weight: 600;
+}
+/* background */
+.bg-red {
+    background-color: #e44413c9 !important;
+}
+.bg-orange {
+    background-color: #d08b0bd2 !important;
+}
+.bg-green {
+    background-color: #5b8f11d2 !important;
+}

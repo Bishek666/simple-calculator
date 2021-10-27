@@ -1,0 +1,16 @@
+:root {
+    --primary: #030546c9;
+    --secondary: #797dffc9;
+    --dark: #0908088a;
+    --light: rgb(250, 242, 242);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+}
